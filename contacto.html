@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Vikingos - Sitio para fanáticos</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/logo.png" alt="Logo Vikingos">
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Temporadas</a></li>
+                <li><a href="#">Personajes</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="#">Reseñas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contacto">
+        <h1>Contacto</h1>
+        <form class="formulario" action="#">
+            <label>Nombre</label><br>
+            <input type="text" name="nombre" value="John"><br>
+            <label>Apellido</label><br>
+            <input type="text" name="apellido" value="Doe"><br>
+            <label>E-mail</label><br>
+            <input type="email" name="email" value="johndoe@example.com"><br>
+            <label>Teléfono</label><br>
+            <input type="text" name="telefono" value="9999-9999"><br>
+            <label>Comentario</label><br>
+            <textarea rows=”10” cols=”100” name=”texto”>Escriba su opinión aquí.</textarea><br>
+            <div class="botones-formulario">
+                <input class="boton-formulario" type="submit" value="Enviar">
+                <input class="boton-formulario" type="reset" value="Cancelar">
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div>
+            <a href="https://www.facebook.com/Vikings/?locale=es_LA"><img src="images/redes/facebook.png" alt="Facebook" title="Facebook"></a>
+            <a href="https://twitter.com/HistoryVikings"><img src="images/redes/twitter.png" alt="Twitter" title="Twitter"></a>
+            <a href="https://www.youtube.com/hashtag/vikings"><img src="images/redes/youtube.png" alt="Youtube" title="Youtube"></a>
+            <a href="https://www.instagram.com/historyvikings/?hl=es"><img src="images/redes/instagram.png" alt="Instagram" title="Instagram"></a>
+            <a href="mailto:matias.arienza@gmail.com"><img src="images/redes/email.png" alt="E-Mail" title="E-Mail"></a>
+        </div>
+        <div class="footer-texto">
+            <p><span class="caracteristica">Autor:</span> <span id="autor">Matias Ezequiel Arienza</span></p>
+        </div>
+        <div class="footer-texto">
+            <p>Este sitio está pensado para todos aquellos fanáticos de la serie 'Vikings'.</p>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+</body>
+</html>
