@@ -6,73 +6,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <link href="css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <title>Vikingos - Sitio para fanáticos</title>
 </head>
 <body>
     <header>
-        <div>
-            <img src="images/logo.png" alt="Logo Vikingos">
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-        <nav id="menu_bar" class="">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Temporadas</a></li>
-                <li><a href="#">Personajes</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="#">Reseñas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="menu">
+            <div class="menu__container">
+                <a href="index.html" class="menu__logo"><img src="images/logo_borde_blanco.png" alt="Logo Vikingos" title="Vikingos - Inicio"></a>
+                <ul class="menu__links">
+                    <li class="menu__item">
+                        <a href="index.html" class="menu__link">Inicio</a>
+                    </li> 
+                    <li class="menu__item menu__item--show">
+                        <a href="#" class="menu__link menu__link--desplegable">Temporadas <img src="images/arrow.svg" class="menu__arrow"></a>
+                        <ul class="menu__nesting">
+                            <li class="menu__inside"><a href="#" class="menu__link menu__link--inside">Temporada 1</a></li>
+                            <li class="menu__inside"><a href="#" class="menu__link menu__link--inside">Temporada 2</a></li>
+                            <li class="menu__inside"><a href="#" class="menu__link menu__link--inside">Temporada 3</a></li>
+                            <li class="menu__inside"><a href="#" class="menu__link menu__link--inside">Temporada 4</a></li>
+                            <li class="menu__inside"><a href="#" class="menu__link menu__link--inside">Temporada 5</a></li>
+                            <li class="menu__inside"><a href="#" class="menu__link menu__link--inside">Temporada 6</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item menu__item--show">
+                        <a href="#" class="menu__link menu__link--desplegable">Personajes <img src="images/arrow.svg" class="menu__arrow"></a>
+                        <ul class="menu__nesting">
+                            <li class="menu__inside"><a href="#" class="menu__link menu__link--inside">Ragnar</a></li>
+                            <li class="menu__inside"><a href="#" class="menu__link menu__link--inside">Lagertha</a></li>
+                            <li class="menu__inside"><a href="#" class="menu__link menu__link--inside">Floki</a></li>
+                            <li class="menu__inside"><a href="#" class="menu__link menu__link--inside">Athelstan</a></li>
+                            <li class="menu__inside"><a href="#" class="menu__link menu__link--inside">Rollo</a></li>
+                            <li class="menu__inside"><a href="#" class="menu__link menu__link--inside">Bjorn</a></li>
+                            <li class="menu__inside"><a href="#" class="menu__link menu__link--inside">Ivar</a></li>
+                            <li class="menu__inside"><a href="#" class="menu__link menu__link--inside">Ubbe</a></li>
+                            <li class="menu__inside"><a href="#" class="menu__link menu__link--inside">Harald</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="galeria.html" class="menu__link">Galería</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Reseñas</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="contacto.html" class="menu__link">Contacto</a>
+                    </li>
+                </ul>
+                <div class="menu__hamburger">
+                    <img src="images/menu.svg" class="menu__img">
+                </div>
+            </div>
         </nav>
     </header>
     <section>
-        <h1>Vikingos - Galeria de fotos</h1>
-        <article class="galeria">
-            <a class="example-image-link" href="images/galeria/athelstan_ragnar_rezar.jpg" data-lightbox="Viking-gal" data-title="Athlestan y Ragnar le rezan al dios cristiano. La relación entre Athelstan y Ragnar fue muy particular, ya que por un lado Athlestan a medida que pasaba el tiempo junto a Ragnar iba acogiendo costumbres y vestimentas vikingas; mientras que al mismo tiempo Ragnar poco a poco fue adoptando el cristianismo como religion."><img class="example-image" src="images/galeria/athelstan_ragnar_rezar_min.jpg" alt="Athlestan y Ragnar le rezan al dios cristiano." title="Athlestan y Ragnar le rezan al dios cristiano."/></a>
-            <a class="example-image-link" href="images/galeria/bjorn_oso.jpg" data-lightbox="Viking-gal" data-title="Björn dejó Kattegat para emprender su propia aventura. Su viaje al bosque sirvió como una especie de iniciación. Quería demostrarle a su padre que tiene lo necesario para sobrevivir solo en el frío y duro invierno. Björn se topó con su tocayo, un oso, y logró matarlo con un hacha. Si bien la escena estaba lejos de ser las mejores escenas de lucha del programa, fue una de las más singulares y memorables."><img class="example-image" src="images/galeria/bjorn_oso_min.jpg" alt="Björn se enfrenta a un oso." title="Björn se enfrenta a un oso."/></a>
-            <a class="example-image-link" href="images/galeria/ecbert_baños.jpg" data-lightbox="Viking-gal" data-title="Ecbert en la casa de baños. Ragnar fue escoltado a la infame casa de baños de Ecbert, donde Ecbert lo instó a unirse a él en el agua. 'Ahora somos iguales', dijo mientras el formidable nórdico se sumergía en la piscina. Ragnar parecía perplejo, incluso tímido. Le explicó a Ecbert que no busca tesoros, sino que lo mueve la curiosidad. Él tampoco es un gobernante. Es solo un granjero que quiere conocer el mundo."><img class="example-image" src="images/galeria/ecbert_baños_min.jpg" alt="Ecbert en la casa de baños." title="Ecbert en la casa de baños."/></a>
-            <a class="example-image-link" href="images/galeria/floki_muerte_ragnar.jpg" data-lightbox="Viking-gal" data-title="Cuando Ragnar finge su muerte, Floki tiene un momento increíblemente poderoso al lado de su ataúd, donde dice: 'Te odio, Ragnar Lothbrok. Y te amo con todo mi corazón'. Es un momento que conecta con la intensidad del personaje, la dualidad y la voluntad de ser más emocional que la mayoría. Esta escena resume increíblemente bien a Floki."><img class="example-image" src="images/galeria/floki_muerte_ragnar_min.jpg" alt="Ragnar finge su muerte y Floki hace catarsis." title="Ragnar finge su muerte y Floki hace catarsis."/></a>
-            <a class="example-image-link" href="images/galeria/ivar_el_deshuesado.jpg" data-lightbox="Viking-gal" data-title="Ivar, el deshuesado, en la pelea con los sajones. Ningún otro vikingo era tan bueno librando una guerra psicológica como Ivar. En 'Homeland', dio un verdadero susto a los sajones cuando les gritó, con el rostro cubierto de sangre. '¿No sabes quién soy? ¡No puedes matarme!' Nadie se atrevió a moverse y acabar con él, a pesar de que Ivar no tenía ninguna posibilidad contra los muchos soldados que lo rodeaban. '¡Soy Ivar el Deshuesado!', gritaba una y otra vez. Muy pronto, Ubbe y el resto de sus hombres acudieron al rescate y la batalla continuó."><img class="example-image" src="images/galeria/ivar_el_deshuesado_min.jpg" alt="Ivar, el deshuesado, en la pelea con los sajones." title="Ivar, el deshuesado, en la pelea con los sajones."/></a>
-            <a class="example-image-link" href="images/galeria/jarl_borg_aguila_de_sangre.jpg" data-lightbox="Viking-gal" data-title="Jarl Borg asesinado con el ritual del 'Aguila de sangre'. La larga escena en la que Ragnar interpreta el águila de sangre sobre Jarl Borg quedó grabada en la memoria de los fans por muchas razones. La música hipnotizante, las muecas de la multitud y la fascinante precisión de Ragnar. No fue la única águila de sangre en Vikings. El rey Aelle también tenía un águila de sangre, pero esa escena se desvanece en comparación con esta. Jarl Borg afrontó su espantosa muerte de la forma más valiente posible. No dejó escapar un solo grito, por lo que no hay duda de que llegó al Valhalla."><img class="example-image" src="images/galeria/jarl_borg_aguila_de_sangre_min.jpg" alt="Jarl Borg asesinado con el ritual del 'Aguila de sangre'." title="Jarl Borg asesinado con el ritual del 'Aguila de sangre'."/></a>
-            <a class="example-image-link" href="images/galeria/judith_oreja.jpg" data-lightbox="Viking-gal" data-title="A judith le cortan la oreja. La escena de 'Born Again' en la que le cortaron la oreja a Judith vive involuntariamente sin pagar alquiler en la cabeza de los fans. La hija del rey Aelle fue torturada por adulterio. Su marido no sintió lástima por ella, mientras que Ecbert puso fin a la locura convenciendo de alguna manera a Aethelwulf de que la aventura de Judith con Athelstan apenas puede considerarse un pecado ya que él era un hombre de Dios."><img class="example-image" src="images/galeria/judith_oreja_min.jpg" alt="A judith le cortan la oreja." title="A judith le cortan la oreja."/></a>
-            <a class="example-image-link" href="images/galeria/lagertha_funeral.jpg" data-lightbox="Viking-gal" data-title="Funeral de Lagertha. La escena de la muerte de Lagertha no fue ni la mitad de memorable que su funeral. Su despedida fue gloriosa. Después de todo, ella era un personaje tan importante como Ragnar o sus hijos. La doncella escudo más grande fue escoltada por las Valquirias hasta su amado Ragnar. 'En mis sueños siempre estamos juntos', fueron las últimas palabras que pronunció."><img class="example-image" src="images/galeria/lagertha_funeral_min.jpg" alt="Funeral de Lagertha." title="Funeral de Lagertha."/></a>
-            <a class="example-image-link" href="images/galeria/lagertha_guerrera_independiente.jpg" data-lightbox="Viking-gal" data-title="Lagertha asesina a Aslaug. El momento en que Lagertha elige dejar Kattegat (y Ragnar) en lugar de quedarse con él y Aslaug es increíble, pero a partir de ahí, su regreso al poder muestra aún más quién es. Sin embargo, en su largo viaje para volver a ser Reina de Kattegat, uno de sus mejores momentos es cuando mata a Aslaug. A primera vista, es una de cientos de sus escenas como guerrera, pero es más que eso. Lagertha también se muestra implacable, manipuladora, inteligente... y, sin embargo, a veces sigue impulsada por sus emociones. Su momento de matar a la mujer que le quitó todo conecta todo esto y, por supuesto, es increíblemente satisfactorio para los fanáticos de Lagertha."><img class="example-image" src="images/galeria/lagertha_guerrera_independiente_min.jpg" alt="Lagertha asesina a Aslaug." title="Lagertha asesina a Aslaug."/></a>
-            <a class="example-image-link" href="images/galeria/lagertha_reina.jpg" data-lightbox="Viking-gal" data-title="Lagertha se convierte en reina. Después de que Lagertha matara a Aslaug, los hijos pequeños de Ragnar buscaban venganza. Tenían a Lagertha y sus doncellas escudo acorraladas, pero aun así, ella no mostró miedo. Momentos antes de que todo el infierno estuviera a punto de desatarse, Bjorn cruzó la puerta y puso fin al conflicto. Es difícil decir qué momento de esa escena fue mejor: Ubbe diciéndole a Ivar que se callara o Bjorn diciéndole 'Así que te vengaste' a su madre."><img class="example-image" src="images/galeria/lagertha_reina_min.jpg" alt="Lagertha se convierte en reina." title="Lagertha se convierte en reina."/></a>
-            <a class="example-image-link" href="images/galeria/raganar_fingio_muerte_paris.jpg" data-lightbox="Viking-gal" data-title="Ragnar finge su muerte y toma por sorpresa a los parisinos. No se puede negar que la batalla de París fue una de las mejores batallas de toda la serie. Ragnar fingió su propia muerte y fue transportado dentro de los muros de la ciudad en un ataúd. El funeral ya estaba en marcha cuando Ragnar saltó del ataúd e hizo que los Frank abrieran las puertas de la ciudad. Así se cumplió la profecía del Vidente: 'Veo que no los vivos sino los muertos conquistarán París'."><img class="example-image" src="images/galeria/raganar_fingio_muerte_paris_min.jpg" alt="Ragnar finge su muerte y toma por sorpresa a los parisinos." title="Ragnar finge su muerte y toma por sorpresa a los parisinos."/></a>
-            <a class="example-image-link" href="images/galeria/ragnar_ecbert_charla.jpg" data-lightbox="Viking-gal" data-title="Ragnar charla con Ecbert. Estas escenas son las más icónicas tanto para Ragnar como para Ecbert: debaten sobre dioses, la vida, la guerra y la realeza durante horas mientras beben vino. Estas conversaciones también ocurren más de una vez, lo cual es parte de lo que las hace tan poderosas. Son un punto de referencia de dónde están los personajes, dónde están sus creencias y cómo los acontecimientos de sus vidas los han cambiado. Y, por supuesto, conectan a los dos reyes que son tan parecidos, a pesar de sus obvias diferencias."><img class="example-image" src="images/galeria/ragnar_ecbert_charla_min.jpg" alt="Ragnar charla con Ecbert." title="Ragnar charla con Ecbert."/></a>
-            <a class="example-image-link" href="images/galeria/torvi_guerrera_despiadada.jpg" data-lightbox="Viking-gal" data-title="Torvi defendiendo Kattegat. Torvi también pasa por muchos cambios a lo largo del programa y logra ser una esposa, una compañera, una intrigante con Lagertha, una protectora, una amante y, por supuesto, una increíble guerrera y escudera. Sin embargo, la escena en la que dispara a Erlendur con su propia ballesta es increíble y combina todos estos rasgos suyos en un solo disparo. Torvi demuestra, en esta escena, que es una guerrera despiadada, pero también que la mueve el deseo de proteger. En este caso, fue para proteger a su hijo y a su amante, pero también la impulsa la necesidad de proteger a Kattegat y lucha en su defensa."><img class="example-image" src="images/galeria/torvi_guerrera_despiadada_min.jpg" alt="Torvi defendiendo Kattegat." title="Torvi defendiendo Kattegat."/></a>
-            <a class="example-image-link" href="images/galeria/ubbe_lagertha_alianza.jpg" data-lightbox="Viking-gal" data-title="Ubbe se alia con Lagertha. Ubbe, más que cualquiera de sus hermanos, es diplomático y pacificador. A diferencia de Ivar y Sigurd, no guarda rencor por la muerte de su madre por mucho tiempo y reconoce el valor de trabajar con Lagertha, no contra ella. En esto, se parece mucho a su propio padre, y verlo sentado con Lagertha, bebiendo y haciendo alianzas, recuerda a Rangar sentado con Ecbert. Es una escena que muestra cómo Ubbe no es como sus hermanos y el lado de su padre que representa."><img class="example-image" src="images/galeria/ubbe_lagertha_alianza_min.jpg" alt="Ubbe se alia con Lagertha." title="Ubbe se alia con Lagertha."/></a>
-            <a class="example-image-link" href="images/galeria/vikingos_invasion_paris.jpg" data-lightbox="Viking-gal" data-title="Los vikingos quieren saquear París. Ningún fan podría olvidar a los nórdicos mirando París en la oscuridad y a Floki cantando: 'Skeggǫld, Skálmǫld, Skildir ro Klofnir', un grito de batalla que se tradujo como: '¡Tiempo de hacha, tiempo de espada, los escudos están astillados!'. El resto de los vikingos se unieron, lo que creó una escena verdaderamente gloriosa y siniestra."><img class="example-image" src="images/galeria/vikingos_invasion_paris_min.jpg" alt="Los vikingos quieren saquear París." title="Los vikingos quieren saquear París."/></a>
-        </article>
+        <div class="contenido__pagina">
+            <h1>Vikingos - Galeria de fotos</h1>
+            <article class="galeria">
+                <a class="galeria__link" href="images/galeria/athelstan_ragnar_rezar.jpg" data-lightbox="Viking-gal" data-title="Athlestan y Ragnar le rezan al dios cristiano. La relación entre Athelstan y Ragnar fue muy particular, ya que por un lado Athlestan a medida que pasaba el tiempo junto a Ragnar iba acogiendo costumbres y vestimentas vikingas; mientras que al mismo tiempo Ragnar poco a poco fue adoptando el cristianismo como religion.">
+                    <img class="galeria__img" src="images/galeria/athelstan_ragnar_rezar_min.jpg" alt="Athlestan y Ragnar le rezan al dios cristiano." title="Athlestan y Ragnar le rezan al dios cristiano."/>
+                </a>
+                <a class="galeria__link" href="images/galeria/bjorn_oso.jpg" data-lightbox="Viking-gal" data-title="Björn dejó Kattegat para emprender su propia aventura. Su viaje al bosque sirvió como una especie de iniciación. Quería demostrarle a su padre que tiene lo necesario para sobrevivir solo en el frío y duro invierno. Björn se topó con su tocayo, un oso, y logró matarlo con un hacha. Si bien la escena estaba lejos de ser las mejores escenas de lucha del programa, fue una de las más singulares y memorables.">
+                    <img class="galeria__img" src="images/galeria/bjorn_oso_min.jpg" alt="Björn se enfrenta a un oso." title="Björn se enfrenta a un oso."/>
+                </a>
+                <a class="galeria__link" href="images/galeria/ecbert_baños.jpg" data-lightbox="Viking-gal" data-title="Ecbert en la casa de baños. Ragnar fue escoltado a la infame casa de baños de Ecbert, donde Ecbert lo instó a unirse a él en el agua. 'Ahora somos iguales', dijo mientras el formidable nórdico se sumergía en la piscina. Ragnar parecía perplejo, incluso tímido. Le explicó a Ecbert que no busca tesoros, sino que lo mueve la curiosidad. Él tampoco es un gobernante. Es solo un granjero que quiere conocer el mundo.">
+                    <img class="galeria__img" src="images/galeria/ecbert_baños_min.jpg" alt="Ecbert en la casa de baños." title="Ecbert en la casa de baños."/>
+                </a>
+                <a class="galeria__link" href="images/galeria/floki_muerte_ragnar.jpg" data-lightbox="Viking-gal" data-title="Cuando Ragnar finge su muerte, Floki tiene un momento increíblemente poderoso al lado de su ataúd, donde dice: 'Te odio, Ragnar Lothbrok. Y te amo con todo mi corazón'. Es un momento que conecta con la intensidad del personaje, la dualidad y la voluntad de ser más emocional que la mayoría. Esta escena resume increíblemente bien a Floki.">
+                    <img class="galeria__img" src="images/galeria/floki_muerte_ragnar_min.jpg" alt="Ragnar finge su muerte y Floki hace catarsis." title="Ragnar finge su muerte y Floki hace catarsis."/>
+                </a>
+                <a class="galeria__link" href="images/galeria/ivar_el_deshuesado.jpg" data-lightbox="Viking-gal" data-title="Ivar, el deshuesado, en la pelea con los sajones. Ningún otro vikingo era tan bueno librando una guerra psicológica como Ivar. En 'Homeland', dio un verdadero susto a los sajones cuando les gritó, con el rostro cubierto de sangre. '¿No sabes quién soy? ¡No puedes matarme!' Nadie se atrevió a moverse y acabar con él, a pesar de que Ivar no tenía ninguna posibilidad contra los muchos soldados que lo rodeaban. '¡Soy Ivar el Deshuesado!', gritaba una y otra vez. Muy pronto, Ubbe y el resto de sus hombres acudieron al rescate y la batalla continuó.">
+                    <img class="galeria__img" src="images/galeria/ivar_el_deshuesado_min.jpg" alt="Ivar, el deshuesado, en la pelea con los sajones." title="Ivar, el deshuesado, en la pelea con los sajones."/>
+                </a>
+                <a class="galeria__link" href="images/galeria/jarl_borg_aguila_de_sangre.jpg" data-lightbox="Viking-gal" data-title="Jarl Borg asesinado con el ritual del 'Aguila de sangre'. La larga escena en la que Ragnar interpreta el águila de sangre sobre Jarl Borg quedó grabada en la memoria de los fans por muchas razones. La música hipnotizante, las muecas de la multitud y la fascinante precisión de Ragnar. No fue la única águila de sangre en Vikings. El rey Aelle también tenía un águila de sangre, pero esa escena se desvanece en comparación con esta. Jarl Borg afrontó su espantosa muerte de la forma más valiente posible. No dejó escapar un solo grito, por lo que no hay duda de que llegó al Valhalla.">
+                    <img class="galeria__img" src="images/galeria/jarl_borg_aguila_de_sangre_min.jpg" alt="Jarl Borg asesinado con el ritual del 'Aguila de sangre'." title="Jarl Borg asesinado con el ritual del 'Aguila de sangre'."/>
+                </a>
+                <a class="galeria__link" href="images/galeria/judith_oreja.jpg" data-lightbox="Viking-gal" data-title="A judith le cortan la oreja. La escena de 'Born Again' en la que le cortaron la oreja a Judith vive involuntariamente sin pagar alquiler en la cabeza de los fans. La hija del rey Aelle fue torturada por adulterio. Su marido no sintió lástima por ella, mientras que Ecbert puso fin a la locura convenciendo de alguna manera a Aethelwulf de que la aventura de Judith con Athelstan apenas puede considerarse un pecado ya que él era un hombre de Dios.">
+                    <img class="galeria__img" src="images/galeria/judith_oreja_min.jpg" alt="A judith le cortan la oreja." title="A judith le cortan la oreja."/>
+                </a>
+                <a class="galeria__link" href="images/galeria/lagertha_funeral.jpg" data-lightbox="Viking-gal" data-title="Funeral de Lagertha. La escena de la muerte de Lagertha no fue ni la mitad de memorable que su funeral. Su despedida fue gloriosa. Después de todo, ella era un personaje tan importante como Ragnar o sus hijos. La doncella escudo más grande fue escoltada por las Valquirias hasta su amado Ragnar. 'En mis sueños siempre estamos juntos', fueron las últimas palabras que pronunció.">
+                    <img class="galeria__img" src="images/galeria/lagertha_funeral_min.jpg" alt="Funeral de Lagertha." title="Funeral de Lagertha."/>
+                </a>
+                <a class="galeria__link" href="images/galeria/lagertha_guerrera_independiente.jpg" data-lightbox="Viking-gal" data-title="Lagertha asesina a Aslaug. El momento en que Lagertha elige dejar Kattegat (y Ragnar) en lugar de quedarse con él y Aslaug es increíble, pero a partir de ahí, su regreso al poder muestra aún más quién es. Sin embargo, en su largo viaje para volver a ser Reina de Kattegat, uno de sus mejores momentos es cuando mata a Aslaug. A primera vista, es una de cientos de sus escenas como guerrera, pero es más que eso. Lagertha también se muestra implacable, manipuladora, inteligente... y, sin embargo, a veces sigue impulsada por sus emociones. Su momento de matar a la mujer que le quitó todo conecta todo esto y, por supuesto, es increíblemente satisfactorio para los fanáticos de Lagertha.">
+                    <img class="galeria__img" src="images/galeria/lagertha_guerrera_independiente_min.jpg" alt="Lagertha asesina a Aslaug." title="Lagertha asesina a Aslaug."/>
+                </a>
+                <a class="galeria__link" href="images/galeria/lagertha_reina.jpg" data-lightbox="Viking-gal" data-title="Lagertha se convierte en reina. Después de que Lagertha matara a Aslaug, los hijos pequeños de Ragnar buscaban venganza. Tenían a Lagertha y sus doncellas escudo acorraladas, pero aun así, ella no mostró miedo. Momentos antes de que todo el infierno estuviera a punto de desatarse, Bjorn cruzó la puerta y puso fin al conflicto. Es difícil decir qué momento de esa escena fue mejor: Ubbe diciéndole a Ivar que se callara o Bjorn diciéndole 'Así que te vengaste' a su madre.">
+                    <img class="galeria__img" src="images/galeria/lagertha_reina_min.jpg" alt="Lagertha se convierte en reina." title="Lagertha se convierte en reina."/>
+                </a>
+                <a class="galeria__link" href="images/galeria/raganar_fingio_muerte_paris.jpg" data-lightbox="Viking-gal" data-title="Ragnar finge su muerte y toma por sorpresa a los parisinos. No se puede negar que la batalla de París fue una de las mejores batallas de toda la serie. Ragnar fingió su propia muerte y fue transportado dentro de los muros de la ciudad en un ataúd. El funeral ya estaba en marcha cuando Ragnar saltó del ataúd e hizo que los Frank abrieran las puertas de la ciudad. Así se cumplió la profecía del Vidente: 'Veo que no los vivos sino los muertos conquistarán París'.">
+                    <img class="galeria__img" src="images/galeria/raganar_fingio_muerte_paris_min.jpg" alt="Ragnar finge su muerte y toma por sorpresa a los parisinos." title="Ragnar finge su muerte y toma por sorpresa a los parisinos."/>
+                </a>
+                <a class="galeria__link" href="images/galeria/ragnar_ecbert_charla.jpg" data-lightbox="Viking-gal" data-title="Ragnar charla con Ecbert. Estas escenas son las más icónicas tanto para Ragnar como para Ecbert: debaten sobre dioses, la vida, la guerra y la realeza durante horas mientras beben vino. Estas conversaciones también ocurren más de una vez, lo cual es parte de lo que las hace tan poderosas. Son un punto de referencia de dónde están los personajes, dónde están sus creencias y cómo los acontecimientos de sus vidas los han cambiado. Y, por supuesto, conectan a los dos reyes que son tan parecidos, a pesar de sus obvias diferencias.">
+                    <img class="galeria__img" src="images/galeria/ragnar_ecbert_charla_min.jpg" alt="Ragnar charla con Ecbert." title="Ragnar charla con Ecbert."/>
+                </a>
+                <a class="galeria__link" href="images/galeria/torvi_guerrera_despiadada.jpg" data-lightbox="Viking-gal" data-title="Torvi defendiendo Kattegat. Torvi también pasa por muchos cambios a lo largo del programa y logra ser una esposa, una compañera, una intrigante con Lagertha, una protectora, una amante y, por supuesto, una increíble guerrera y escudera. Sin embargo, la escena en la que dispara a Erlendur con su propia ballesta es increíble y combina todos estos rasgos suyos en un solo disparo. Torvi demuestra, en esta escena, que es una guerrera despiadada, pero también que la mueve el deseo de proteger. En este caso, fue para proteger a su hijo y a su amante, pero también la impulsa la necesidad de proteger a Kattegat y lucha en su defensa.">
+                    <img class="galeria__img" src="images/galeria/torvi_guerrera_despiadada_min.jpg" alt="Torvi defendiendo Kattegat." title="Torvi defendiendo Kattegat."/>
+                </a>
+                <a class="galeria__link" href="images/galeria/ubbe_lagertha_alianza.jpg" data-lightbox="Viking-gal" data-title="Ubbe se alia con Lagertha. Ubbe, más que cualquiera de sus hermanos, es diplomático y pacificador. A diferencia de Ivar y Sigurd, no guarda rencor por la muerte de su madre por mucho tiempo y reconoce el valor de trabajar con Lagertha, no contra ella. En esto, se parece mucho a su propio padre, y verlo sentado con Lagertha, bebiendo y haciendo alianzas, recuerda a Rangar sentado con Ecbert. Es una escena que muestra cómo Ubbe no es como sus hermanos y el lado de su padre que representa.">
+                    <img class="galeria__img" src="images/galeria/ubbe_lagertha_alianza_min.jpg" alt="Ubbe se alia con Lagertha." title="Ubbe se alia con Lagertha."/>
+                </a>
+                <a class="galeria__link" href="images/galeria/vikingos_invasion_paris.jpg" data-lightbox="Viking-gal" data-title="Los vikingos quieren saquear París. Ningún fan podría olvidar a los nórdicos mirando París en la oscuridad y a Floki cantando: 'Skeggǫld, Skálmǫld, Skildir ro Klofnir', un grito de batalla que se tradujo como: '¡Tiempo de hacha, tiempo de espada, los escudos están astillados!'. El resto de los vikingos se unieron, lo que creó una escena verdaderamente gloriosa y siniestra.">
+                    <img class="galeria__img" src="images/galeria/vikingos_invasion_paris_min.jpg" alt="Los vikingos quieren saquear París." title="Los vikingos quieren saquear París."/>
+                </a>
+            </article>
+        </div>
     </section>
     <footer>
-        <div>
-            <a href="https://www.facebook.com/Vikings/?locale=es_LA"><img src="images/redes/facebook.png" alt="Facebook" title="Facebook"></a>
-            <a href="https://twitter.com/HistoryVikings"><img src="images/redes/twitter.png" alt="Twitter" title="Twitter"></a>
-            <a href="https://www.youtube.com/hashtag/vikings"><img src="images/redes/youtube.png" alt="Youtube" title="Youtube"></a>
-            <a href="https://www.instagram.com/historyvikings/?hl=es"><img src="images/redes/instagram.png" alt="Instagram" title="Instagram"></a>
-            <a href="mailto:matias.arienza@gmail.com"><img src="images/redes/email.png" alt="E-Mail" title="E-Mail"></a>
-        </div>
-        <div class="footer-texto">
-            <p><span class="caracteristica">Autor:</span> <span id="autor">Matias Ezequiel Arienza</span></p>
-        </div>
-        <div class="footer-texto">
-            <p>Este sitio está pensado para todos aquellos fanáticos de la serie 'Vikings'.</p>
+        <div class="footer__contenido">
+            <div class="footer__redes">
+                <a href="https://www.youtube.com/hashtag/vikings" target="_blank" class="footer__redes__link"><img src="images/redes/youtube.png" alt="Youtube" title="Youtube" class="footer__redes__img"></a>
+                <a href="https://www.facebook.com/Vikings/?locale=es_LA" target="_blank" class="footer__redes__link"><img src="images/redes/facebook.png" alt="Facebook" title="Facebook" class="footer__redes__img"></a>
+                <a href="https://twitter.com/HistoryVikings" target="_blank" class="footer__redes__link"><img src="images/redes/twitter.png" alt="Twitter" title="Twitter" class="footer__redes__img"></a>
+                <a href="https://www.instagram.com/historyvikings/?hl=es" target="_blank" class="footer__redes__link"><img src="images/redes/instagram.png" alt="Instagram" title="Instagram" class="footer__redes__img"></a>
+                <a href="mailto:matias.arienza@gmail.com" target="_blank" class="footer__redes__link"><img src="images/redes/email.png" alt="E-Mail" title="E-Mail" class="footer__redes__img"></a>
+            </div>
+            <div class="footer__copyright">
+                <p class="footer__texto">
+                    Este sitio está pensado para todos aquellos fanáticos de la serie 'Vikings'.<span class="caracteristica"> Autor:</span> <span id="autor">Matias Ezequiel Arienza</span>.
+                </p>
+            </div>
         </div>
     </footer>
-    <script type="text/javascript">
-        function myFunction() {
-          var x = document.getElementById("menu_bar");
-          if (x.className === "") {
-            x.className += " responsive";
-          } else {
-            x.className = "";
-          }
-        }
-    </script>
+    <script src="js/app.js"></script>
     <script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
