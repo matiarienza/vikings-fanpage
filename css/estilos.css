@@ -164,8 +164,13 @@ form textarea{
 	margin-bottom: 0.5rem;
 }
 .video__trailer{
+	width: 90%;
 	text-align: center;
-	margin: 1rem;
+	padding: 1.5rem;
+}
+.video__frame{
+	width: 100%;
+	height: 30rem;
 }
 .articulo__general{
 	margin-top: 2rem;
@@ -420,5 +425,23 @@ form textarea{
 		justify-content: center;
 		align-items: center;
 		margin-bottom: 2rem;
+	}
+	.articulos__columna{
+		width: 100%;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.articulos__secundarios{
+		width: 80%;
+		padding: 1rem;
+		margin: 0;
+	}
+	.video__trailer{
+		width: 100%;
+		padding: 0.5rem;
+	}
+	.video__frame{
+		width: 100%;
+		height: 15rem;
 	}
 }
