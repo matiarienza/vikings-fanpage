@@ -170,6 +170,21 @@ form textarea{
 .articulo__general{
 	margin-top: 2rem;
 	margin-bottom: 4rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.personajes__contenedor{
+	display: flex;
+	justify-content: space-between;
+}
+.personaje__cont__img{
+	margin: 2rem;
+}
+.personaje__cont__parrafo{
+	margin: 2rem;
+}
+.personaje__img{
+	height: 20rem;
 }
 .galeria{
 	display: flex;
@@ -179,18 +194,27 @@ form textarea{
 }
 .galeria__link{
 	margin: 0.3rem;
+	width: 30%;
 }
 .galeria__img{
-	width: 400px;
+	width: 100%;
 }
 .caracteristica{
 	font-weight: bold;
+}
+.img__general{
+	width: 100%;
+}
+.contenido__link{
+	text-decoration: none;
 }
 .resenas{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 .resenas__link{
 	text-decoration: none;
@@ -217,6 +241,10 @@ form textarea{
 }
 .resena__medio{
 	font-style: italic;
+}
+.articulos__interesantes{
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 .articulos__columna{
 	display: flex;
@@ -249,13 +277,17 @@ form textarea{
 	text-align: center;
 	width: 100%;
 }
-.contacto__columna{
-	width: 50%;
+.contacto__columna_form{
+	width: 45%;
+	padding: 2rem;
+}
+.contacto__columna_img{
+	width: 55%;
 	padding: 2rem;
 }
 .contacto__img{
 	height: auto;
-	width: 41rem;
+	width: 100%;
 }
 .formulario{
 	background-color: #FFFFFF;
@@ -367,5 +399,15 @@ form textarea{
 	.menu__link--inside{
 		width: 100%;
 		margin-left: auto;
+	}
+	.contacto__columna_form{
+		width: 100%;
+	}
+	.contacto__columna_img{
+		display: none;
+	}
+	.menu__link--desplegable{
+		pointer-events: none;
+		cursor: pointer;
 	}
 }
