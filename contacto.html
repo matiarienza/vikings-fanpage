@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kenia&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/estilos.css">
     <title>Vikingos - Sitio para fanáticos</title>
 </head>
@@ -47,7 +50,7 @@
                         <a href="galeria.html" class="menu__link">Galería</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link">Reseñas</a>
+                        <a href="resenas.html" class="menu__link">Reseñas</a>
                     </li>
                     <li class="menu__item">
                         <a href="contacto.html" class="menu__link">Contacto</a>
@@ -62,22 +65,29 @@
     <section>
         <div class="contenido__pagina">
             <h1>Contacto</h1>
-            <form class="formulario" action="#">
-                <label>Nombre</label><br>
-                <input type="text" name="nombre" value="John"><br>
-                <label>Apellido</label><br>
-                <input type="text" name="apellido" value="Doe"><br>
-                <label>E-mail</label><br>
-                <input type="email" name="email" value="johndoe@example.com"><br>
-                <label>Teléfono</label><br>
-                <input type="text" name="telefono" value="9999-9999"><br>
-                <label>Comentario</label><br>
-                <textarea rows=”10” cols=”100” name=”texto”>Escriba su opinión aquí.</textarea><br>
-                <div class="botones-formulario">
-                    <input class="boton-formulario" type="submit" value="Enviar">
-                    <input class="boton-formulario" type="reset" value="Cancelar">
+            <div class="contacto__columnas">
+                <div class="contacto__columna">
+                    <form class="formulario" action="#">
+                        <label>Nombre</label><br>
+                        <input type="text" name="nombre" value="John"><br>
+                        <label>Apellido</label><br>
+                        <input type="text" name="apellido" value="Doe"><br>
+                        <label>E-mail</label><br>
+                        <input type="email" name="email" value="johndoe@example.com"><br>
+                        <label>Teléfono</label><br>
+                        <input type="text" name="telefono" value="9999-9999"><br>
+                        <label>Comentario</label><br>
+                        <textarea rows=”10” cols=”100” name=”texto”>Escriba su opinión aquí.</textarea><br>
+                        <div class="formulario__botones">
+                            <input class="formulario__boton" type="submit" value="Enviar">
+                            <input class="formulario__boton" type="reset" value="Cancelar">
+                        </div>
+                    </form>
                 </div>
-            </form>
+                <div class="contacto__columna">
+                    <img src="images/vikings_season6_cast.jpg" alt="Vikingos Contacto" class="contacto__img">
+                </div>
+            </div>
         </div>
     </section>
     <footer>
