@@ -410,4 +410,15 @@ form textarea{
 		pointer-events: none;
 		cursor: pointer;
 	}
+	.footer__redes__link{
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
+	.articulos__columna{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 2rem;
+	}
 }
