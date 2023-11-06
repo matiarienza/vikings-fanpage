@@ -220,6 +220,7 @@ form textarea{
 }
 .contenido__link{
 	text-decoration: none;
+	font-weight: bold;
 }
 .resenas{
 	display: flex;
