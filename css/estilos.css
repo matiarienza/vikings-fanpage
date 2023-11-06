@@ -39,7 +39,6 @@ footer div{
 h1{
 	font-family: 'Kenia', sans-serif;
 	font-size: 4rem;
-	/*font-size: xx-large;*/
 	text-align: center;
 	margin-top: 4%;
 	margin-bottom: 2%;
@@ -158,11 +157,19 @@ form textarea{
 }
 .contenido__pagina{
 	padding-top: 2rem;
-	padding-bottom: 4rem;
+	padding-bottom: 6rem;
 }
-.inicio__parrafo{
+.parrafo__general{
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
+}
+.video__trailer{
+	text-align: center;
+	margin: 1rem;
+}
+.articulo__general{
+	margin-top: 2rem;
+	margin-bottom: 4rem;
 }
 .galeria{
 	display: flex;
