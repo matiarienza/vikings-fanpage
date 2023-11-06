@@ -181,15 +181,23 @@ form textarea{
 .personajes__contenedor{
 	display: flex;
 	justify-content: space-between;
+	background-color: #fffddb;
+	border-style: solid;
+	border-color: #000000;
+	border-width: 2px;
+	border-radius: 1rem;
+	padding: 2rem;
 }
 .personaje__cont__img{
-	margin: 2rem;
+	width: 33%;
 }
 .personaje__cont__parrafo{
-	margin: 2rem;
+	width: 66%;
+	padding-left: 2rem;
 }
 .personaje__img{
-	height: 20rem;
+	width: 100%;
+	height: 100%;
 }
 .galeria{
 	display: flex;
@@ -266,7 +274,10 @@ form textarea{
 	border-width: 2px;
 }
 .articulos__secundarios{
-	width: 40%;
+	width: 60%;
+	padding-left: 2rem;
+}
+.articulo__secundario{
 	background-color: rgb(182, 255, 231);
 	border-style: solid;
 	border-color: #000000;
@@ -425,16 +436,21 @@ form textarea{
 		justify-content: center;
 		align-items: center;
 		margin-bottom: 2rem;
-	}
-	.articulos__columna{
 		width: 100%;
-		padding-left: 1rem;
-		padding-right: 1rem;
 	}
+	.articulo__principal,
 	.articulos__secundarios{
-		width: 80%;
-		padding: 1rem;
+		width: 100%;
+		padding: 0;
 		margin: 0;
+	}
+	.articulo__principal__contenido,
+	.articulo__secundario{
+		width: 100%;
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	.video__trailer{
 		width: 100%;
@@ -443,5 +459,23 @@ form textarea{
 	.video__frame{
 		width: 100%;
 		height: 15rem;
+	}
+	.personajes__contenedor{
+		flex-direction: column;
+		justify-content: center;
+		padding: 1rem;
+	}
+	.personaje__cont__img{
+		width: 100%;
+	}
+	.personaje__cont__parrafo{
+		width: 100%;
+		padding-left: 0;
+		padding-top: 1rem;
+		margin: 0;
+	}
+	.personaje__img{
+		height: 100%;
+		width: 100%;
 	}
 }
