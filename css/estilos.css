@@ -209,9 +209,6 @@ form textarea{
 	margin: 0.3rem;
 	width: 30%;
 }
-.galeria__img{
-	width: 100%;
-}
 .caracteristica{
 	font-weight: bold;
 }
@@ -237,7 +234,7 @@ form textarea{
 	margin-bottom: 1rem;
 }
 .resenas__art{
-	background-color: #FFFFFF;
+	background-color: #fffddb;
 	border-style: solid;
 	border-color: #000000;
 	border-width: 2px;
